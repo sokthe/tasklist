@@ -1,0 +1,32 @@
+ul {
+  width: 200px;
+  position: relative;
+}
+
+ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+ul li::before {
+  position: absolute;
+  content: "";
+  left: 15px;
+  width: 24px;
+  height: 24px;
+  background-image: url("image/radio.png");
+  background-size: cover;
+  background-position: center;
+}
+
+ul li.check {
+  text-decoration: line-through;
+}
+
+ul li.check::before {
+  background-image: url("image/check.png");
+}
+ul li span {
+  position: absolute;
+  right: 0;
+}
